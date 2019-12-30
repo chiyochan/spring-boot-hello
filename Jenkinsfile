@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                bat 'echo %PATH%'
+                bat 'gradle -version'
             }
 
         }
