@@ -11,14 +11,15 @@ pipeline {
 
         stage ('Test') {
             steps {
-                echo "Test"
+                bat 'gradle test'
             }
 
         }
 
         stage ('Deploy') {
             steps {
-                echo "Deploy"
+                bat 'java -jar build/libs/gs-spring-boot-0.1.0.jar --server-port=8083'
+                bat 'curl localhost:8083/actuator/health'
             }
 
         }
