@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                gradle -v
+                gradle('clean', 'classes')
             }
 
         }
