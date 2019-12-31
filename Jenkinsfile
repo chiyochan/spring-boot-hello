@@ -26,14 +26,16 @@ pipeline {
 
         stage ('Build') {
             steps {
-                bat 'gradle clean build'
+                echo "Build"
+                // bat 'gradle clean build'
             }
 
         }
 
         stage ('Test') {
             steps {
-                bat 'gradle test'
+                echo "Test"
+                // bat 'gradle test'
             }
 
         }
