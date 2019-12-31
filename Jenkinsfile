@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     parameters {
-        string(name:'PERSON', defaultValue:'JANE', description:'default user')
-        text(name:'EMAILS', defaultValue:'JANE@gmail.com', description:'send emails to whom')
-        booleanParam(name:'JIRA', defaultValue:'YES', description:'Should we update JIRA')
+        string(name:'PERSON', defaultValue:'', description:'default user')
+        text(name:'EMAILS', defaultValue:'', description:'send emails to whom')
+        booleanParam(name:'JIRA', defaultValue:'', description:'Should we update JIRA')
         choice(name:'SCAN_TYPE', choices:['BLACKDUCK','CHECKMARX'], description:'Which scans should we run?')
-        password(name:'PASSWORD', defaultValue:'PASS123', description:'Default password to access services')
+        password(name:'PASSWORD', defaultValue:'', description:'Default password to access services')
 
     }
 
