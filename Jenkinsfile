@@ -1,4 +1,4 @@
-@Library('gradle-build@master') _
+@Library('standard@master') _
 pipeline {
     agent any
 
