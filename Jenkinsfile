@@ -1,3 +1,4 @@
+@Library('gradle-build') _
 pipeline {
     agent any
 
@@ -26,8 +27,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                echo "Build"
-                // bat 'gradle clean build'
+                standard()
             }
 
         }
