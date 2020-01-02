@@ -1,4 +1,5 @@
 #!groovy
+@Library('standard') _
 
 pipeline {
     agent any
@@ -28,8 +29,8 @@ pipeline {
 
         stage ('Build') {
             steps {
-                library 'standard'
-                //standard()
+                echo "Build"
+                standard()
             }
 
         }
