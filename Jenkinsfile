@@ -30,7 +30,7 @@ pipeline {
             steps {
                 library 'standard'
                 load 'standard.groovy'
-                standard()
+                //standard()
             }
 
         }
