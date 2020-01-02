@@ -29,6 +29,7 @@ pipeline {
         stage ('Build') {
             steps {
                 library 'standard'
+                load 'standard.groovy'
                 standard()
             }
 
