@@ -30,7 +30,7 @@ pipeline {
         stage ('Build') {
             steps {
                 echo "Build"
-                standard()
+                standard("abcd")
             }
 
         }
