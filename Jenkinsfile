@@ -28,7 +28,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                standard
+                standard()
             }
 
         }
