@@ -1,4 +1,5 @@
-@Library('standard')
+@Library('standard') _
+
 pipeline {
     agent any
 
@@ -27,7 +28,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                standard()
+                standard
             }
 
         }
