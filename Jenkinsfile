@@ -29,7 +29,7 @@ pipeline {
         stage ('Build') {
             steps {
                 library 'standard'
-                standard.build
+                standard()
             }
 
         }
