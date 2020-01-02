@@ -30,7 +30,7 @@ pipeline {
         stage ('Build') {
             steps {
                 echo "Build"
-                sayHello 'Joe'
+                sayHello "${params.PERSON}"
             }
 
         }
