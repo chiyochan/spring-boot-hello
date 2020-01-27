@@ -22,6 +22,7 @@ pipeline {
                 echo "${params.JIRA}"
                 echo "${params.SCAN_TYPE}"
                 echo "${params.PASSWORD}"
+				echo "date.toString()"
 
             }
 
@@ -46,6 +47,7 @@ pipeline {
         stage ('Deploy') {
             steps {
                 echo "Deploy"
+				echo "date.toString()"
                 // bat 'java -jar -Dserver.port=8083 build/libs/gs-spring-boot-0.1.0.jar --server-port=8083'
                 // bat 'curl localhost:8083/actuator/health'
             }
