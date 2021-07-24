@@ -3,6 +3,9 @@
 pipeline {
     agent any
 
+    tools {
+      gradle 'gradle_7_1_1'
+	}
 
     stages {
 
@@ -17,7 +20,7 @@ pipeline {
         stage ('Build') {
             steps {
                 echo "Build"
-		sh './gradlew build'
+		sh 'gradle --version'
 
             }
 
