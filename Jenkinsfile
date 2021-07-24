@@ -1,5 +1,4 @@
 #!groovy
-@Library('standard') _
 
 pipeline {
     agent any
