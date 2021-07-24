@@ -11,10 +11,10 @@ pipeline {
 
     stages {
 
-        stage ('Init') {
+        stage ('Checkout') {
             steps {
-
-				
+	    echo "Check out code"		    
+	    git branch: 'dev', credentialsId: 'github-credentials', url: 'https://github.com/chiyochan/spring-boot-hello'	
             }
 
         }
