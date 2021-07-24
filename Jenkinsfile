@@ -20,7 +20,7 @@ pipeline {
         stage ('Build') {
             steps {
                 echo "Build"
-		sh 'gradle --version'
+		sh 'gradle build'
 
             }
 
