@@ -29,7 +29,7 @@ pipeline {
         stage ('Test') {
             steps {
                 echo "Test"
-                // bat 'gradle test'
+                sh 'gradle test'
             }
 
         }
